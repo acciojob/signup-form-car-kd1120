@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Signup Form</title>
+    <title>Job Application Form</title>
 </head>
 <body>
     <form action="your-server-endpoint" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label>Gender:</label>
-        <input type="radio" id="gender_m" name="gender" value="Male" required>
-        <label for="gender_m">Male</label>
-        <input type="radio" id="gender_f" name="gender" value="Female" required>
-        <label for="gender_f">Female</label><br><br>
+        <label>Gender *</label>
+        <input type="radio" id="gender_male" name="gender" value="Male" required>
+        <label for="gender_male">Male</label>
+        <input type="radio" id="gender_female" name="gender" value="Female" required>
+        <label for="gender_female">Female</label>
+        <input type="radio" id="gender_other" name="gender" value="Other" required>
+        <label for="gender_other">Other</label><br><br>
 
-        <label for="cars">Car Brands:</label>
-        <select id="cars" name="cars" required>
-            <option value="" disabled selected>--Please choose an option--</option>
-            <option value="toyota">Toyota</option>
-            <option value="honda">Honda</option>
-            <option value="ford">Ford</option>
-            <!-- Add more options as needed -->
+        <label for="laptop">Laptop Brands</label>
+        <select id="laptop" name="laptop">
+            <option value="">--Select a laptop brand--</option>
+            <option value="apple">Apple</option>
+            <option value="asus">Asus</option>
+            <option value="hp">HP</option>
         </select><br><br>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+        <label for="age">Age *</label>
+        <input type="number" id="age" name="age" required><br><br>
 
-        <label for="dob">Date of Birth:</label>
+        <label for="dob">Date of Birth *</label>
         <input type="date" id="dob" name="dob" required><br><br>
 
-        <label for="tel">Phone Number:</label>
-        <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx"><br><br>
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
 
-        <input type="checkbox" id="tos" name="tos" required>
-        <label for="tos">I agree to the TOS</label><br><br>
-
-        <button type="submit">Sign Up</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
